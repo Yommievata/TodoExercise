@@ -2,33 +2,19 @@ package se.lexicon.grouplnu.model;
 
 public class Person {
 
-    private int personIdInitial;
-    private int personIdFinal;
+    private final int personId;
     private String firstName;
     private String lastName;
 
     //Constructor
-    public Person(int personIdInitial, int personIdFinal, String firstName, String lastName){
-        this.personIdInitial = personIdInitial;
-        this.personIdFinal = personIdFinal;
+    public Person(final int personId, String firstName, String lastName){
+        this.personId = personId;
         this.firstName = firstName;
         this.lastName = lastName;
     }
 
-    public int getPersonIdInitial() {
-        return personIdInitial;
-    }
-
-    public void setPersonIdInitial(int personIdInitial) {
-        this.personIdInitial = personIdInitial;
-    }
-
-    public int getPersonIdFinal() {
-        return personIdFinal;
-    }
-
-    public void setPersonIdFinal(int personIdFinal) {
-        this.personIdFinal = personIdFinal;
+    public int getPersonId() {
+        return personId;
     }
 
     public String getFirstName() {
