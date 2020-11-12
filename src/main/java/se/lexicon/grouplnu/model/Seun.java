@@ -18,6 +18,7 @@ package se.lexicon.grouplnu.model;
         public final int personId;
         public String firstName;
         public String lastName;
+        public String Yommie;
 
 
 
