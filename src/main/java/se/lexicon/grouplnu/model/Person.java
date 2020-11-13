@@ -33,7 +33,4 @@ public class Person {
         this.lastName = lastName;
     }
 
-    public static void main(String[] args) {
-        System.out.println("\"Seun See this\" = " + "Seun See this");
-    }
 }
