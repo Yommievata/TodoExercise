@@ -2,6 +2,7 @@ package se.lexicon.grouplnu;
 
 
 import se.lexicon.grouplnu.model.Person;
+import se.lexicon.grouplnu.model.Todo;
 
 public class App
 {
@@ -19,5 +20,15 @@ public class App
         peter.setLastName("Johansson");
         peter.setPersonId(911);
 
+        Todo todoJob1 = new Todo(1, "create a program");
+        System.out.println(person1.getFirstName() + " assigned job ID " + todoJob1.getTodoId() + " to " + todoJob1.getDescription());
+
+        todoJob1.setTodoId(1);
+        todoJob1.setDescription(" ");
+        todoJob1.setDone(true);
+        todoJob1.setAssignee(person1);
+
     }
+
+
 }
