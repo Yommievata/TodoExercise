@@ -2,12 +2,12 @@ package se.lexicon.grouplnu.model;
 
 public class Person {
 
-    private final int personId;
+    private int personId;
     private String firstName;
     private String lastName;
 
     //Constructor
-    public Person(final int personId, String firstName, String lastName){
+    public Person(int personId, String firstName, String lastName){
         this.personId = personId;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -15,6 +15,10 @@ public class Person {
 
     public int getPersonId() {
         return personId;
+    }
+
+    public void setPersonId(int personId) {
+        this.personId = personId;
     }
 
     public String getFirstName() {
@@ -32,5 +36,4 @@ public class Person {
     public void setLastName(String lastName) {
         this.lastName = lastName;
     }
-
 }
