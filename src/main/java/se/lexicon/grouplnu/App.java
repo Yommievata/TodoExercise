@@ -8,7 +8,6 @@ public class App
 {
     public static void main(String[] args) {
 
-
         Person peter = new Person(911, "Peter", "Johansson");
         Person person1 = new Person(564, "Bjorn",  "Magnus");
 
@@ -18,12 +17,12 @@ public class App
 
         peter.setFirstName("Peter");
         peter.setLastName("Johansson");
-        peter.setPersonId(911);
+
 
         Todo todoJob1 = new Todo(1, "create a program");
         System.out.println(person1.getFirstName() + " assigned job ID " + todoJob1.getTodoId() + " to " + todoJob1.getDescription());
 
-        todoJob1.setTodoId(1);
+
         todoJob1.setDescription(" ");
         todoJob1.setDone(true);
         todoJob1.setAssignee(person1);
