@@ -2,7 +2,7 @@ package se.lexicon.grouplnu.model;
 
 public class Todo {
 
-    private int todoId;
+    private final int todoId;
     private String description;
     private boolean done;
     private Person assignee;
@@ -23,9 +23,7 @@ public class Todo {
         return todoId;
     }
 
-    public void setTodoId(int todoId) {
-        this.todoId = todoId;
-    }
+
 
     public String getDescription() {
         return description;
