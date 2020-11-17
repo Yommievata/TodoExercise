@@ -7,6 +7,7 @@ public class Todo {
     private boolean done;
     private Person assignee;
 
+
 //    Person assignee = peter;
 
     //constructor to take todoId and description
