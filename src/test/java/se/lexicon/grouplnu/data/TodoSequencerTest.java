@@ -15,5 +15,8 @@ public class TodoSequencerTest {
 
     @Test
     public void resetTodoID() {
+        int personId = 0;
+        boolean expectedValue = false;
+        Assert.assertEquals(false, false);
     }
 }

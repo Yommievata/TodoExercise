@@ -57,8 +57,5 @@ public class TodoItems {
     }
     public Todo[] findUnassignedTodoItems() {
     return todos;
-
     }
-
-
 }
