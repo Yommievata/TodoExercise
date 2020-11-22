@@ -6,31 +6,22 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class PersonTest {
-      int personId;
-      String firstName;
-      String lastName;
-      Person person;
+
 
     @Test
     public void getPersonId() {
+        //Arrange
+        int personId = 1;
+        String firstName = "Peter";
+        String lastName = "Magnusson";
 
+        //Act
+        Person actual = new Person(personId, firstName, lastName);
+
+        //Assert
+        assertEquals(personId, actual.getPersonId());
+        assertEquals(firstName, actual.getFirstName());
+        assertEquals(lastName, actual.getLastName());
+    }
     }
 
-
-    @Test
-    public void getFirstName() {
-
-    }
-
-    @Test
-    public void setFirstName() {
-    }
-
-    @Test
-    public void getLastName() {
-    }
-
-    @Test
-    public void setLastName() {
-    }
-}

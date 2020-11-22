@@ -16,6 +16,9 @@ public class PersonSequencerTest {
 
     @Test
     public void reset() {
+        int personId = 0;
+        boolean expectedValue = false;
+        Assert.assertEquals(false, false);
 
     }
 }

@@ -7,8 +7,8 @@ public class PersonSequencer {
         personId = ++personId;
         return personId;
     }
-    public static void reset(){
+    static void reset(){
         personId = 0;
-      }
+    }
 }
 
